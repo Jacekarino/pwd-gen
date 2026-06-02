@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pwd://gen</title>
+    <meta name="description" content="A professional and secure random password generator.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <h1>pwd://gen</h1>
+            <p>Generate secure passwords with one click.</p>
+        </header>
+
+        <main class="generator-card">
+            <div class="password-display-wrapper">
+                <div class="password-display" id="password-display">Select options and click Generate</div>
+                <button class="icon-btn copy-btn" id="copy-btn" title="Copy to clipboard">
+                    <i class="fa-regular fa-copy"></i>
+                </button>
+            </div>
+
+            <div class="actions">
+                <button class="primary-btn generate-btn" id="generate-btn">
+                    <i class="fa-solid fa-bolt"></i> Generate Password
+                </button>
+            </div>
+
+            <div class="panels-container">
+                <button class="panel-btn" id="settings-toggle">
+                    <i class="fa-solid fa-gear"></i> Settings
+                </button>
+                <button class="panel-btn" id="history-toggle">
+                    <i class="fa-solid fa-clock-rotate-left"></i> History
+                </button>
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <p>Made with ♡ by Jacekarino</p>
+            <a href="https://github.com/Jacekarino" target="_blank" rel="noopener noreferrer" class="github-btn">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+        </footer>
+    </div>
+
+    <div class="modal-overlay" id="settings-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Settings</h2>
+                <button class="icon-btn close-modal" id="close-settings"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div class="setting-group">
+                <label for="length-slider">Length: <span id="length-value">12</span></label>
+                <input type="range" id="length-slider" min="4" max="64" value="12">
+            </div>
+
+            <div class="checkbox-grid">
+                <label class="checkbox-container">
+                    Uppercase (A-Z)
+                    <input type="checkbox" id="chk-upper" checked>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">
+                    Lowercase (a-z)
+                    <input type="checkbox" id="chk-lower" checked>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">
+                    Numbers (0-9)
+                    <input type="checkbox" id="chk-numbers" checked>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">
+                    Symbols (!@#$%)
+                    <input type="checkbox" id="chk-symbols" checked>
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+            <div class="setting-group options-group">
+                <label class="checkbox-container">
+                    Avoid sequential repeating characters
+                    <input type="checkbox" id="chk-no-repeat">
+                    <span class="checkmark"></span>
+                </label>
+
+                <div class="blacklist-group">
+                    <label for="symbol-blacklist">Exclude characters:</label>
+                    <input type="text" id="symbol-blacklist" class="text-input" placeholder="e.g. !@#$%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="history-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>History</h2>
+                <button class="icon-btn close-modal" id="close-history"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div class="history-header">
+                <span>Recent Passwords</span>
+                <button class="text-btn clear-btn" id="clear-history-btn">Clear</button>
+            </div>
+            <ul class="history-list" id="history-list"></ul>
+        </div>
+    </div>
+
+    <div class="toast" id="toast">Password copied to clipboard!</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
