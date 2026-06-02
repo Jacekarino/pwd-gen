@@ -7,5 +7,7 @@ pwd://gen is simple web app for generating random passwords. You can choose the 
 
 # Running the project:
 
-Open index.html in your browser of choice.
-Online deployment coming soon.
+https://jacekarino-pwd-gen.netlify.app/
+
+Temporary deployment - final domain coming soon.
+Alternatively: Open index.html in your browser of choice.
