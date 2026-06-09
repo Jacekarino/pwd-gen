@@ -9,5 +9,4 @@ pwd://gen is simple web app for generating random passwords. You can choose the 
 
 https://pwd-gen.pl/
 
-Temporary deployment.
 Alternatively: Open index.html in your browser of choice.
