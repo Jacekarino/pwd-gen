@@ -20,7 +20,7 @@
 <br />
 
 <p align="center">
-  <img src="https://github.com/Jacekarino/pwd-gen/blob/main/thumbnail.png?raw=true" alt="pwd://gen Interface Preview" width="720" />
+  <img src="https://raw.githubusercontent.com/Jacekarino/pwd-gen/main/thumbnail.png" alt="pwd://gen Interface Preview" width="720" />
 </p>
 <br />
 
