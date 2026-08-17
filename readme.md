@@ -20,7 +20,7 @@
 <br />
 
 <p align="center">
-  ![User Interface](./thumbnail.png)
+  <a href="https://pwd--gen.pages.dev/"><img src="thumbnail.png" alt="pwd://gen Interface Preview" width="720" style="border-radius: 12px; box-shadow: 0 20px 40px -15px rgba(0,0,0,0.5);" /></a>
 </p>
 <br />
 
