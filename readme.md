@@ -20,7 +20,7 @@
 <br />
 
 <p align="center">
-  <img src="./thumbnail.png" alt="pwd://gen Interface Preview" width="720" style="border-radius: 12px; box-shadow: 0 20px 40px -15px rgba(0,0,0,0.5);" />
+  <img src="https://github.com/Jacekarino/pwd-gen/blob/main/thumbnail.png?raw=true" alt="pwd://gen Interface Preview" width="720" />
 </p>
 <br />
 
